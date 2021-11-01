@@ -7,46 +7,47 @@
     tools:context=".MainActivity">
 
 
-
     <EditText
         android:id="@+id/ten"
         android:layout_width="412dp"
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ho Ten*"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="3dp" />
+        android:text="Ho Ten*           : "
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp" />
 
     <EditText
         android:id="@+id/mssv"
         android:layout_width="410dp"
         android:layout_height="38dp"
         android:ems="10"
-        android:text="MSSV*"
         android:inputType="number"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="51dp" />
+        android:text="MSSV*              : "
+        app:layout_constraintTop_toBottomOf="@+id/ten"
+        tools:layout_editor_absoluteX="-2dp" />
 
     <EditText
         android:id="@+id/ngaySinh"
         android:layout_width="409dp"
         android:layout_height="46dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
-        android:text="Ngay sinh*"
         android:inputType="date"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="89dp" />
+        android:text="Ngay sinh*       : "
+        app:layout_constraintTop_toBottomOf="@+id/sdt"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/gioiTinh"
         android:layout_width="412dp"
         android:layout_height="48dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Gioi tinh"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="135dp" />
+        android:text="Gioi tinh           : "
+        app:layout_constraintTop_toBottomOf="@+id/ngaySinh"
+        tools:layout_editor_absoluteX="2dp" />
 
     <EditText
         android:id="@+id/diaChi"
@@ -54,9 +55,9 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Dia chi lien lac"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="185dp" />
+        android:text="Dia chi lien lac : "
+        app:layout_constraintTop_toBottomOf="@+id/gioiTinh"
+        tools:layout_editor_absoluteX="-3dp" />
 
     <EditText
         android:id="@+id/sdt"
@@ -64,18 +65,19 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="So dien thoai*"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="226dp" />
+        android:text="So dien thoai* : "
+        app:layout_constraintTop_toBottomOf="@+id/mssv"
+        tools:layout_editor_absoluteX="0dp" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="410dp"
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email*"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="274dp" />
+        android:text="Email*              : "
+        app:layout_constraintTop_toBottomOf="@+id/diaChi"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/soThich"
@@ -83,16 +85,17 @@
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="So thich"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="324dp" />
+        android:text="So thich           : "
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:layout_editor_absoluteX="-2dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/submit"
         android:layout_width="410dp"
         android:layout_height="44dp"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="392dp" />
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/soThich"
+        tools:layout_editor_absoluteX="4dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
